@@ -173,13 +173,13 @@
 .in_view_left-p {
   transform: translateX(-60vw);
   animation: pop-left-p 1.3s ease-out;
-  animation-delay: 1.7s;
+  animation-delay: 1s;
   animation-fill-mode: forwards;
 }
 .in_view_right-p {
   transform: translateX(60vw);
   animation: pop-right-p 1.3s ease-out;
-  animation-delay: 1.7s;
+  animation-delay: 1s;
   animation-fill-mode: forwards;
 }
 
@@ -280,7 +280,6 @@
 }
 
 @media screen and (max-width: 1200px) and (min-width: 901px) {
-  
   .gallery-section {
     display: none;
   }
@@ -288,32 +287,30 @@
     display: block;
   }
   .gallery-mobile div {
-    position:relative;
+    position: relative;
     margin-bottom: 60px;
   }
   .gal-mob-img {
-   
     width: 60%;
     margin-top: 5%;
   }
-  .mob-h{
-    font-size:5rem;
+  .mob-h {
+    font-size: 5rem;
     font-weight: 400;
     letter-spacing: 1px;
-    text-align:left;
-    width:auto;
-    margin-left:15%;
-    padding-top:5%;
+    text-align: left;
+    width: auto;
+    margin-left: 15%;
+    padding-top: 5%;
   }
-  .mob-p{
-    text-align:right;
+  .mob-p {
+    text-align: right;
     margin-right: 18%;
-    font-size:5.5rem;
+    font-size: 5.5rem;
   }
-  
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 900px) {
   .gallery-section {
     display: none;
   }
@@ -321,45 +318,42 @@
     display: block;
   }
   .gallery-mobile div {
-    position:relative;
+    position: relative;
     margin-bottom: 60px;
   }
   .gal-mob-img {
-   
     width: 70%;
     margin-top: 5%;
   }
-  .mob-h{
-    font-size:4rem;
+  .mob-h {
+    font-size: 4rem;
     font-weight: 400;
     letter-spacing: 1px;
-    text-align:left;
-    width:auto;
-    margin-left:10%;
-    padding-top:5%;
+    text-align: left;
+    width: auto;
+    margin-left: 10%;
+    padding-top: 5%;
   }
-  .mob-p{
-    text-align:right;
+  .mob-p {
+    text-align: right;
     margin-right: 15%;
-    font-size:5rem;
+    font-size: 5rem;
   }
 }
 
-@media screen and (max-width: 600px) 
-{
-  .mob-h{
+@media screen and (max-width: 600px) {
+  .mob-h {
     font-size: 3rem;
   }
-  .mob-p{
+  .mob-p {
     font-size: 3.5rem;
   }
 }
-@media screen and (max-width: 400px) 
-{
-  .mob-h{
+@media screen and (max-width: 400px) {
+  .mob-h {
     font-size: 2.5rem;
   }
-  .mob-p{
+  .mob-p {
     font-size: 3rem;
   }
 }
