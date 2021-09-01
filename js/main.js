@@ -6,7 +6,4 @@ const addScript = (fileName) => {
 
 window.addEventListener("load", () => {
   addScript("video");
-  addScript("gallery");
-  addScript("sponsors");
-  addScript("galleryFunction");
 });
