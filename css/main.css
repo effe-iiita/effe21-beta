@@ -1712,6 +1712,8 @@ form .inputs-description {
 
 .headline__btnholder {
   margin-top: 4rem;
+  display: inline-block;
+  padding-right: 10px;
 }
 
 .main-section__media {
@@ -2176,7 +2178,7 @@ form .inputs-description {
     width: -webkit-calc(100% - 100px);
     width: -moz-calc(100% - 100px);
     width: calc(100% - 100px);
-    padding: 0 10rem;
+    padding: 0  10rem;
   }
 }
 
@@ -2249,13 +2251,14 @@ form .inputs-description {
 
 @media only screen and (min-width: 768px) {
   .navigation__item .link {
-    font-size: 6rem;
+    font-size: 4rem;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .navigation__item .link {
-    font-size: 7.5rem;
+    font-size: 5
+    rem;
   }
 }
 
