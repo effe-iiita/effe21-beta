@@ -1,0 +1,129 @@
+.heading h1 {
+  text-align: center;
+  padding: 10px 0px;
+  margin: 20px 0px;
+}
+.card-container {
+  padding-top: 0%;
+  background-color: #061125;
+  width: calc(100vw - 100px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  position: absolute;
+  right: 0;
+  height: auto;
+}
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #fefefe;
+  border-radius: 10px;
+}
+.card {
+  width: 550px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  border: 1px solid wheat;
+  margin: 10px;
+}
+.card:nth-child(3) {
+  width: 450px;
+  height: 300px;
+}
+.card:nth-child(4) {
+  width: 450px;
+  height: 300px;
+}
+.card:nth-child(5) {
+  width: 450px;
+  height: 300px;
+}
+.face1 {
+  position: absolute;
+  transform: perspective(600px) rotateY(0deg);
+  transition: transform 0.6s linear;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+.face1 img {
+  height: 100%;
+  width: 100%;
+}
+.face2 {
+  position: absolute;
+  height: 100%;
+  border-radius: 10px;
+  top: 0;
+  transform: perspective(600px) rotateY(180deg);
+  backface-visibility: hidden;
+  overflow: hidden;
+  transition: transform 0.6s linear;
+  background: rgba(19, 35, 61, 1);
+  color: aliceblue;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+}
+
+.face2 .info_event {
+  padding: 10px 20px;
+  align-items: center;
+}
+.face2 .info_event h1 {
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  padding: 7px;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 4rem;
+}
+.face2 .info_event p {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  padding: 7px;
+  line-height: 2rem;
+  letter-spacing: 1.5px;
+}
+.face2 .dates {
+  font-size: 1.3rem;
+  margin: 20px 0px;
+  align-items: center;
+  text-align: center;
+}
+.button {
+  margin-top: 30px;
+}
+.button a {
+  text-decoration: none;
+  color: #13233d;
+  background-color: #fff;
+  padding: 20px 40px;
+  border-radius: 30px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+.card:hover .face1 {
+  transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover .face2 {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+@media screen and (max-width: 1250px) {
+  .card {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .card-container {
+    width: 100vw;
+  }
+}
