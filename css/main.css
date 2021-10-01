@@ -232,10 +232,10 @@ img {
   width: 100%;
   height: auto;
 }
-
-.overflow-hidden {
+ 
+ /*.overflow-hidden {
   overflow: hidden !important;
-}
+}*/
 
 .fullheight {
   position: static;
@@ -1606,7 +1606,7 @@ form .inputs-description {
   .main-section__content {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 0;  
     width: 100%;
     height: 100%;
   }
@@ -2189,8 +2189,7 @@ form .inputs-description {
 }
 
 .navigation__item {
-  display: block;
-  position: relative;
+ position: relative;
   padding: 0;
 }
 
@@ -2251,13 +2250,13 @@ form .inputs-description {
 
 @media only screen and (min-width: 768px) {
   .navigation__item .link {
-    font-size: 4rem;
+    font-size: 6rem;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .navigation__item .link {
-    font-size: 5
+    font-size: 7rem;
     rem;
   }
 }
