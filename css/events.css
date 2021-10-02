@@ -1,47 +1,57 @@
 .heading h1 {
-  text-align: center;
-  padding: 10px 0px;
-  margin: 20px 0px;
+  font-size: 7rem;
+  font-weight:900;
+  margin-top: 2.5rem;
+  margin-left: 20rem ;
 }
+
 .card-container {
-  padding-top: 0%;
+  padding-top: 2%;
   background-color: #061125;
+  height:100vh;
   width: calc(100vw - 100px);
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
+  overflow:hidden;
   position: absolute;
   right: 0;
+ 
   height: auto;
 }
 ::-webkit-scrollbar {
   width: 3px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #fefefe;
+  background-color: #061125;
   border-radius: 10px;
 }
 .card {
   width: 550px;
-  height: 300px;
-  border-radius: 10px;
-  overflow: hidden;
+  height: 255px;
+  border-radius: 16px;
+  
   position: relative;
   display: flex;
-  border: 1px solid wheat;
-  margin: 10px;
+  margin: 1.5rem;
+  /* box-shadow: 0px 4px 54px 0px rgba(0, 0, 0, 0.65); */
+
 }
+
 .card:nth-child(3) {
-  width: 450px;
-  height: 300px;
+  width: 400px;
+  height: 255px;
+  border-radius: 10px ;
 }
 .card:nth-child(4) {
-  width: 450px;
-  height: 300px;
+  width: 400px;
+  height: 255px;
+  border-radius: 10px;
 }
 .card:nth-child(5) {
-  width: 450px;
-  height: 300px;
+  width: 400px;
+  height: 255px;
+  border-radius: 10px;
 }
 .face1 {
   position: absolute;
@@ -49,6 +59,7 @@
   transition: transform 0.6s linear;
   backface-visibility: hidden;
   overflow: hidden;
+  box-shadow: 0px 4px 54px 0px rgba(0, 0, 0, 0.65);
 }
 .face1 img {
   height: 100%;
@@ -57,7 +68,7 @@
 .face2 {
   position: absolute;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 16px;
   top: 0;
   transform: perspective(600px) rotateY(180deg);
   backface-visibility: hidden;
@@ -69,8 +80,24 @@
   /* justify-content: center; */
   align-items: center;
   flex-direction: column;
+  box-shadow: 0px 4px 54px 0px rgba(0, 0, 0, 0.65);
 }
+.card:nth-child(1) > .face2 {
+  background: rgba(0, 43, 46, 1);
+}
+.card:nth-child(2) > .face2 {
+  background: #6b2f00;
 
+}
+.card:nth-child(3) > .face2 {
+  background: #18063f;
+}
+.card:nth-child(4) > .face2 {
+  background: #08325a;
+}
+.card:nth-child(5) > .face2 {
+  background: #133d26;
+}
 .face2 .info_event {
   padding: 10px 20px;
   align-items: center;
@@ -81,16 +108,17 @@
   width: 100%;
   padding: 7px;
   text-align: center;
-  margin-bottom: 15px;
-  font-size: 4rem;
+  margin-bottom: 10px;
+  font-size: 3.5rem;
 }
 .face2 .info_event p {
-  text-align: center;
+  text-align: left;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   padding: 7px;
   line-height: 2rem;
   letter-spacing: 1.5px;
+  font-size: 1.2rem;
 }
 .face2 .dates {
   font-size: 1.3rem;
@@ -99,7 +127,7 @@
   text-align: center;
 }
 .button {
-  margin-top: 30px;
+  margin-top: 15px;
 }
 .button a {
   text-decoration: none;
@@ -107,7 +135,7 @@
   background-color: #fff;
   padding: 20px 40px;
   border-radius: 30px;
-  font-weight: 500;
+  font-weight: 600;
   font-family: "Montserrat", sans-serif;
 }
 .card:hover .face1 {
@@ -120,10 +148,23 @@
 @media screen and (max-width: 1250px) {
   .card {
     width: 450px;
+    
   }
 }
 @media screen and (max-width: 1200px) {
   .card-container {
     width: 100vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  .card-container{
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+  }
+  .card {
+    width: 80vw !important;
+    height: 16rem !important;
+    
   }
 }
