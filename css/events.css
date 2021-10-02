@@ -54,6 +54,8 @@
   border-radius: 10px;
 }
 .face1 {
+  width:100%;
+  height: 100%;
   position: absolute;
   transform: perspective(600px) rotateY(0deg);
   transition: transform 0.6s linear;
@@ -61,10 +63,11 @@
   overflow: hidden;
   box-shadow: 0px 4px 54px 0px rgba(0, 0, 0, 0.65);
 }
-.face1 img {
+.face1 .img_desk .img_mob{
   height: 100%;
   width: 100%;
 }
+
 .face2 {
   position: absolute;
   height: 100%;
@@ -145,11 +148,24 @@
   transform: perspective(600px) rotateY(0deg);
 }
 
+
+.img_mob{
+  display: none;
+}
+
 @media screen and (max-width: 1250px) {
   .card {
     width: 450px;
     
   }
+
+  .img_desk{
+    display: none;
+  }
+  .img_mob{
+    display: block;
+  }
+
 }
 @media screen and (max-width: 1200px) {
   .card-container {
@@ -164,7 +180,20 @@
   }
   .card {
     width: 80vw !important;
-    height: 16rem !important;
-    
+    height: 18rem !important;
+  }
+  .face2 .info_event h1 {
+    font-size: 2rem;
+  }
+  .face2 .info_event p {
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+  }
+  .button{
+    margin:0px;
+  }
+  .button a{
+    padding: 10px 20px;
   }
 }
+
