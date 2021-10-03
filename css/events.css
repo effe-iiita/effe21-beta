@@ -7,9 +7,7 @@
   margin-top: 3rem;
   margin-left: 20rem;
 }
-.events-button {
-  margin-left: 2rem;
-}
+
 .card-container {
   padding-top: 2%;
   background-color: #061125;
@@ -208,9 +206,5 @@
   }
   .button a {
     padding: 10px 20px;
-  }
-  .events-button {
-    margin-left: 0rem;
-    margin-top: 1rem;
   }
 }
