@@ -185,11 +185,11 @@ $(function () {
   // KBW-Countdown Start
   // --------------------------------------------- //
   $("#countdown").countdown({
-    until: new Date(2021, 9, 8),
+    until: new Date(2021, 11, 3),
     format: "D",
   });
   $("#countdown-large").countdown({
-    until: new Date(2021, 9, 8),
+    until: new Date(2021, 11, 3),
     format: "DHMS",
   });
 
