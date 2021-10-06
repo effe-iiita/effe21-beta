@@ -14,11 +14,11 @@ const mouse = {
   x: undefined,
   y: undefined,
 };
-
 window.addEventListener("mousemove", (e) => {
+  const leafCount = Math.round(Math.random() - 0.2);
   mouse.x = e.x;
   mouse.y = e.y;
-  for (let i = 0; i < 1; ++i) {
+  for (let i = 0; i < leafCount; ++i) {
     leafHoverArray.push(new Leaf(mouse.x, mouse.y));
   }
 });

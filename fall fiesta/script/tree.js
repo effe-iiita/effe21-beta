@@ -63,7 +63,7 @@ window.addEventListener("resize", () => {
     treeCanvas.height * treeLengthFactor,
     0,
     branchWidth,
-    "brown",
+    "#7e3e28",
     "rgb(255,123,3)"
   );
 });
@@ -111,6 +111,6 @@ drawTree(
   treeCanvas.height * treeLengthFactor,
   0,
   branchWidth,
-  "brown",
+  "#7e3e28",
   "rgb(255,123,3)"
 );

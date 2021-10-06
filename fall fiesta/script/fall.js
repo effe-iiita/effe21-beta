@@ -36,9 +36,18 @@ const fallLeaves = () => {
     }
   }
 };
+let leafCount = 10;
+if (window.innerWidth <= 450) {
+  leafCount = 4;
+}
+for (let i = 0; i < leafCount; ++i) {
+  leafFallArray.push(new LeafFall());
+}
+
+fallLeaves();
 
 setInterval(() => {
-  for (let i = 0; i < 5; ++i) {
+  for (let i = 0; i < 10; ++i) {
     leafFallArray.push(new LeafFall());
   }
 
