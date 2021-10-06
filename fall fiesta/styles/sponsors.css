@@ -1,0 +1,108 @@
+.sponsor-container {
+  display: flex;
+  position: relative;
+  margin: auto;
+  justify-content: space-around;
+  padding: 4rem 2rem;
+  padding-top: 2rem;
+  height: 85%;
+  width: 85%;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+.sponsor-card {
+  margin: 1rem;
+  display: grid;
+  min-width: 380px;
+  grid-template-rows: 200px 1fr 1fr;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  position: relative;
+  justify-items: center;
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+}
+.sponsor-card .sponsor-logo {
+  width: 200px;
+  display: grid;
+  place-items: center;
+}
+.sponsor-card .sponsor-name {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 500;
+  margin-top: -8%;
+  width: 80%;
+  border-bottom: 1px solid black;
+}
+
+.sponsor-title {
+  text-align: center;
+  margin: 10% 0;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1200px) {
+  .heading h1 {
+    font-size: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .heading h1 {
+    font-size: 4rem;
+  }
+  .sponsor-card .sponsor-logo {
+    width: 120px;
+    display: grid;
+    place-items: center;
+  }
+
+  .sponsor-card .sponsor-name {
+    font-size: 2rem;
+    width: 80%;
+  }
+
+  .sponsor-title {
+    margin: 5% 0;
+    font-size: 1.3rem;
+  }
+  .sponsor-card {
+    min-width: 300px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    grid-template-rows: 150px 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .heading h1 {
+    font-size: 3rem;
+  }
+  .sponsor-card .sponsor-logo {
+    width: 100px;
+  }
+
+  .sponsor-card .sponsor-name {
+    font-size: 2rem;
+    width: 80%;
+  }
+
+  .sponsor-title {
+    margin: 5% 0;
+    font-size: 1rem;
+  }
+  .sponsor-card {
+    margin: 1rem 0rem;
+    min-width: 250px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+  }
+}
+
+.utils {
+  position: absolute;
+  opacity: 0;
+  top: -100%;
+}

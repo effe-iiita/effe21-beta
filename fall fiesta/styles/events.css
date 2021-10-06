@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Condensed:wght@300&display=swap");
+
+.events-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-container {
+  display: flex;
+  position: relative;
+  margin: auto;
+  justify-content: space-around;
+  padding: 4rem 1rem;
+  padding-top: 2rem;
+  height: 85%;
+  width: 100%;
+  flex-wrap: wrap;
+  overflow-y: auto;
+}
+
+.card {
+  width: 550px;
+  height: 255px;
+  border-radius: 16px;
+  transform-style: preserve-3d;
+  position: relative;
+  display: flex;
+  margin: 1rem 1.5rem;
+  box-shadow: 0px 0px 10px rgb(255, 123, 3);
+}
+
+.card:nth-child(3) {
+  width: 400px;
+  height: 255px;
+  border-radius: 10px;
+}
+.card:nth-child(4) {
+  width: 400px;
+  height: 255px;
+  border-radius: 10px;
+}
+.card:nth-child(5) {
+  width: 400px;
+  height: 255px;
+  border-radius: 10px;
+}
+
+.face2 {
+  position: absolute;
+  height: 100%;
+  border-radius: 16px;
+  top: 0;
+  transform: perspective(600px) rotateY(180deg);
+  backface-visibility: hidden;
+  overflow: hidden;
+  transition: transform 0.6s linear;
+  background: rgba(19, 35, 61, 1);
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.card:nth-child(1) > .face2 {
+  background: rgba(0, 43, 46, 1);
+}
+.card:nth-child(2) > .face2 {
+  background: #6b2f00;
+}
+.card:nth-child(3) > .face2 {
+  background: #18063f;
+}
+.card:nth-child(4) > .face2 {
+  background: #08325a;
+}
+.card:nth-child(5) > .face2 {
+  background: #133d26;
+}
+.face2 .info_event {
+  padding: 10px 20px;
+  align-items: center;
+}
+.face2 .info_event h1 {
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  padding: 7px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+.face2 .info_event p {
+  text-align: left;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  line-height: 1.3rem;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  padding: 0 1rem;
+}
+.face2 .dates {
+  font-size: 1.3rem;
+  margin: 20px 0px;
+  align-items: center;
+  text-align: center;
+}
+.button {
+  margin-top: 15px;
+}
+.button a {
+  text-decoration: none;
+  color: #13233d;
+  background-color: #fff;
+  padding: 20px 40px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+.card:hover .face1 {
+  transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover .face2 {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.img_mob {
+  display: none;
+}
+
+.face1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: perspective(600px) rotateY(0deg);
+  transition: transform 0.6s linear;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+.face1 img {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 1250px) {
+  .card {
+    width: 400px;
+  }
+
+  .img_desk {
+    display: none;
+  }
+  .img_mob {
+    display: block;
+  }
+
+  .button a {
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .card-container {
+    width: 100vw;
+  }
+  .events-container {
+    margin-top: 15rem;
+  }
+  .heading h1 {
+    font-size: 7rem;
+    font-weight: 900;
+    margin-top: 3rem;
+    margin-left: 0rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 450px) {
+  .face2 .info_event h1 {
+    font-size: 2rem;
+  }
+  .face2 .info_event p {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .face2 .info_event h1 {
+    font-size: 1.8rem;
+  }
+  .face2 .info_event p {
+    font-size: 0.6rem;
+    line-height: 0.9rem;
+  }
+}
